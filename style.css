@@ -23,13 +23,18 @@ body {
 
 h1 {
   font-size: 2.6rem;
+  color: var(--Dark-purple);
+}
+
+h2 {
+  color: var(--Dark-purple);
 }
 
 p {
-  color: hsl(292, 16%, 49%);
+  color: var(--Grayish-purple);
 }
 
-.main {
+main {
   background-image: url(./assets/images/background-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -48,8 +53,7 @@ p {
 }
 
 .container {
-  width: 100%;
-  max-width: 599px;
+  width: 599px;
   background-color: white;
   border-radius: .5rem;
 }
@@ -89,18 +93,18 @@ h2:hover {
 .info p {
   display: none;
   padding: 10px 0px;
+  transition: all 0.2s;
 }
 
 
 
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
-  .main {
+  main {
     background-image: url(./assets/images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(275, 100%, 97%);
-
     width: 100%;
   }
 
